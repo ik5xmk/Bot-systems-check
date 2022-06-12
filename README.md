@@ -1,6 +1,6 @@
 # Bot-systems-check
-Procedure for receiving alerts via Telegram if a radio repeater (or other system) is no longer reachable on the internet side.
-==============================================================================================================================
+This procedure is for receiving alerts via Telegram if a radio repeater (or other system) is no longer reachable on the internet side.
+You need a computer with linux and the python3 language. The systems are checked with the PING command.
 
 First step, create a Telegram Bot:
 contact the father of all bots, @BotFather, on telegram.
@@ -51,3 +51,5 @@ Third step, edit the check_systems.py file in the section that contains the IPs 
 <b>MY_MSG</b> = the warning message
  
 As a last step copy the check_systems.service file in /lib/systemd/system and edit it by setting the right paths. The service can then be started with the command "systemctl start check_systems.service" (use stop to stop it and status to check its operation). To set the service at startup of the Linux system, use the command: "systemctl enable check_systems.service" (disable to remove).
+  
+David ik5xmk@gmail.com
