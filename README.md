@@ -39,9 +39,15 @@ If everything has been processed correctly we should have in response a series o
 Third step, edit the check_systems.py file in the section that contains the IPs and names of the systems we want to monitor. We can also vary the sending times and number of checks, by acting on the constants:
 
 IS_DEAD = how many PINGs to send before declaring the system dead
-CHECK_TIME = every how many seconds to send the PING command
-ALERT_MSG = every how many seconds to send the unreachable system alert
-STATUS_MSG = how often to send a summary message of all systems being monitored, in seconds
-STOP_MSG = after how many attempts to stop sending alerts related to that unresponsive system
-MY_MSG = the warning message
   
+CHECK_TIME = every how many seconds to send the PING command
+  
+ALERT_MSG = every how many seconds to send the unreachable system alert
+  
+STATUS_MSG = how often to send a summary message of all systems being monitored, in seconds
+  
+STOP_MSG = after how many attempts to stop sending alerts related to that unresponsive system
+  
+MY_MSG = the warning message
+ 
+As a last step copy the check_systems.service file in /lib/systemd/system and edit it by setting the right paths. The service can then be started with the command "systemctl start check_systems.service" (use stop to stop it and status to check its operation). To set the service at startup of the Linux system, use the command: "systemctl enable check_systems.service" (disable to remove).
