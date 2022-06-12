@@ -50,4 +50,6 @@ If everything has been processed correctly we should have in response a series o
  
   As a last step copy the <b>check_systems.service</b> file in <b>/lib/systemd/system</b> and edit it by setting the right paths. The service can then be started with the command "systemctl start check_systems.service" (use stop to stop it and status to check its operation). To set the service at startup of the Linux system, use the command: "systemctl enable check_systems.service" (disable to remove).
   
+  <b>Notice:</b> for our radio repeaters we use a VPN to access them, so every single system has its own IP. PING cannot pass via NAT. However, this solution can be easily extended to understand if there is connectivity on a high-altitude location or if a server is operating on the network side.
+  
 David ik5xmk@gmail.com
