@@ -30,13 +30,13 @@ Write any message within the channel created in the previous step and reload the
 If everything went well you will notice that there will be a lot of additional information.
 What we need is ID within chat. A series of numbers that will begin with the -. For example -3184917874.
   
-Second step: download the send_bot_msg.sh and check_systems.py files in the same folder on your Linux system and edit the first file by inserting your Bot Token and chat ID. Try sending a test message to the channel:
+  Second step: download the <b>send_bot_msg.sh</b> and <b>check_systems.py</b> files in the same folder on your Linux system and edit the first file by inserting your Bot Token and chat ID. Try sending a test message to the channel:
   
-sh send_bot_msg.sh "test message"
+  <b>sh send_bot_msg.sh "test message"</b>
   
 If everything has been processed correctly we should have in response a series of information starting with "ok": true and in the channel the message transmitted.
   
-Third step, edit the check_systems.py file in the section that contains the IPs and names of the systems we want to monitor. We can also vary the sending times and number of checks, by acting on the constants:
+  Third step, edit the <b>check_systems.py</b> file in the section that contains the IPs and names of the systems we want to monitor. We can also vary the sending times and number of checks, by acting on the constants:
 
 <b>IS_DEAD</b> = how many PINGs to send before declaring the system dead
   
@@ -50,6 +50,6 @@ Third step, edit the check_systems.py file in the section that contains the IPs 
   
 <b>MY_MSG</b> = the warning message
  
-As a last step copy the check_systems.service file in /lib/systemd/system and edit it by setting the right paths. The service can then be started with the command "systemctl start check_systems.service" (use stop to stop it and status to check its operation). To set the service at startup of the Linux system, use the command: "systemctl enable check_systems.service" (disable to remove).
+  As a last step copy the <b>check_systems.service</b> file in <b>/lib/systemd/system</b> and edit it by setting the right paths. The service can then be started with the command "systemctl start check_systems.service" (use stop to stop it and status to check its operation). To set the service at startup of the Linux system, use the command: "systemctl enable check_systems.service" (disable to remove).
   
 David ik5xmk@gmail.com
