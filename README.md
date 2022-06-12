@@ -5,15 +5,13 @@ You need a computer with linux and the python3 language. The systems are checked
 First step, create a Telegram Bot:
 contact the father of all bots, @BotFather, on telegram.
 
-By typing "/newbot" the BotFather will ask you for a name to assign to your bot, you can use whatever you want. Then you will need to assign them a username that ends with the word "bot":
+By typing "/newbot" the BotFather will ask you for a name to assign to your bot, you can use whatever you want. Then you will need to assign them a username that ends with the word "bot", for example:
 
-for example
+name: <b>my_control</b>
 
-name: my_control
+username: <b>my_control_bot</b>
 
-username: my_control_bot
-
-If everything is available for use, a Token will be communicated (take note!!).
+If everything is available for use, a Token will be communicated (<b>take note!!</b>).
 
 Now you need to create a channel on Telegram, as a type: public. Click on the name of the newly created channel at the top and select administrators, then add administrator.  Add the bot you created just now as a contact by searching for it by typing @my_control_bot for example.
 
