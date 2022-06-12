@@ -30,7 +30,7 @@ Write any message within the channel created in the previous step and reload the
 If everything went well you will notice that there will be a lot of additional information.
 What we need is ID within chat. A series of numbers that will begin with the -. For example -3184917874.
   
-Second step: download the send_bot_msg.sh and check_systems.py files in a folder on your Linux system and edit the first file by inserting your Bot token and chat ID. Try sending a test message to the channel:
+Second step: download the send_bot_msg.sh and check_systems.py files in the same folder on your Linux system and edit the first file by inserting your Bot Token and chat ID. Try sending a test message to the channel:
   
 sh send_bot_msg.sh "test message"
   
