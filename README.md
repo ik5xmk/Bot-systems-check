@@ -18,7 +18,7 @@ Now you need to create a channel on Telegram, as a type: <b>public</b>. Click on
 At this point we need to obtain the ID of the channel created, to be used in our script.
 Using the Token received before, write in the browser:
 
-http://api.telegram.org/bot<BOT TOKEN>/getUpdates?offset=0
+http://api.telegram.org/botINSERTYOURBOTTOKEN/getUpdates?offset=0
 
 For example the link should become something like this http://api.telegram.org/bot123457:789099345/getUpdates?offset=0
 
